@@ -24,7 +24,7 @@ from students.decorators import teacher_required
 from django.core.cache import cache
 from courses.forms import UserEditForm
 
-from courses.search import youtube_search
+
 from courses.suggestions import update_clusters
 
 @login_required
@@ -40,6 +40,7 @@ def edit(request):
         user_form = UserEditForm(instance=request.user)
     return render(request, 'registration/edit.html', {'user_form': user_form})
 
+"""
 @login_required
 def list_videos(request):
     subjects = Subject.objects.all()
@@ -52,7 +53,7 @@ def list_videos(request):
         results = request.GET['results']
         videos =  youtube_search(q, results)
     return render(request,'videos/list.html', {'videos': videos, 'q': q, 'results': results, 'subjects': subjects, 'max_lengths': max_lengths})
-
+"""
 
 class CourseListView(TemplateResponseMixin, View):
     model = Course
