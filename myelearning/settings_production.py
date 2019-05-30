@@ -10,9 +10,9 @@ DEBUG = True
 
 #SERVER_EMAIL = config('ADMIN_EMAIL')
 
-ADMINS = [
-  (config('ADMIN_NAME'), config('ADMIN_EMAIL')),
-]
+#ADMINS = [
+  #(config('ADMIN_NAME'), config('ADMIN_EMAIL')),
+#]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = config('SENDGRID_SERVER')
