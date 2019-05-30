@@ -34,6 +34,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Configure Redis for caching results
 
+"""
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -45,7 +46,7 @@ CACHES = {
         "TIMEOUT": 300
     }
 }
-
+"""
 # Media storages
 
 #AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
