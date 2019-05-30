@@ -174,7 +174,7 @@ REST_FRAMEWORK = {
 }
 
 # Mailer
-DEFAULT_FROM_EMAIL = config('ADMIN_EMAIL')
+#DEFAULT_FROM_EMAIL = config('ADMIN_EMAIL')
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
