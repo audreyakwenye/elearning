@@ -5,11 +5,10 @@ DATABASES['default'] = dj_database_url.config()
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-DEBUG = config('DEBUG', cast=bool)
-
+DEBUG = True
 # email admin
 
-SERVER_EMAIL = config('ADMIN_EMAIL')
+#SERVER_EMAIL = config('ADMIN_EMAIL')
 
 ADMINS = [
   (config('ADMIN_NAME'), config('ADMIN_EMAIL')),
